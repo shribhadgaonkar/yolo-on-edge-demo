@@ -61,7 +61,7 @@ Also this model is givinng wrong detection of the car such as toothbrush and oth
 - Multiple distant/small cars not yet detected reliably (expected – pre-trained model)
 
 ## Next Steps
-- Collect 200–500 images of Hot Wheels cars from robot camera
+- I am planning to collect 200–500 images of Hot Wheels cars from robot camera
 - Label with Roboflow → train custom YOLOv8
 - Publish detections as `vision_msgs/Detection2DArray`
 - Integrate with Nav2 → drive toward detected car
