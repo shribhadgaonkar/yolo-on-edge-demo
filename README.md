@@ -54,8 +54,17 @@ Also this model is givinng wrong detection of the car such as toothbrush and oth
 - Publish detections as `vision_msgs/Detection2DArray`
 - Integrate with Nav2 → drive toward detected car
 
-## Demo Video
-<video src="media/demo.mp4" controls width="640"></video>
+## Live Demo GIFs
+
+<p align="center">
+  <img src="media/hiWonder_Teleop_twist.gif" width="45%" alt="Teleop keyboard control" />
+  <img src="media/Hiwonmder_yolo_detection.gif" width="45%" alt="YOLOv8 live detection" />
+</p>
+
+<p align="center">
+  <strong>Left:</strong> Keyboard teleop driving the robot<br>
+  <strong>Right:</strong> YOLOv8 detecting objects in real time
+</p>
 
 ## Code
 See `src/yolo_camera.py`
