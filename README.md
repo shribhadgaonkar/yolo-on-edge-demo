@@ -70,3 +70,7 @@ Also this model is givinng wrong detection of the car such as toothbrush and oth
 
 ## Code
 See `src/yolo_camera.py`
+
+![ROS 2 Humble](https://img.shields.io/badge/ROS%202-Humble-blue)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-8.4-green)
+![Jetson Orin Nano](https://img.shields.io/badge/Jetson-Orin%20Nano-orange)
