@@ -8,6 +8,18 @@ First successful live YOLOv8 Object detection on HiWonder Jet Auto pro robot (Je
 **Hardware:** HiWonder JetAuto Pro (Jetson Orin Nano 8GB)  
 **Software:** ROS 2 Humble, Ultralytics YOLOv8, peripherals camera package
 
+## Live Demo GIFs
+
+<p align="center">
+  <img src="media/hiWonder_Teleop_twist.gif" width="45%" alt="Teleop keyboard control" />
+  <img src="media/Hiwonmder_yolo_detection.gif" width="45%" alt="YOLOv8 live detection" />
+</p>
+
+<p align="center">
+  <strong>Left:</strong> Keyboard teleop driving the robot<br>
+  <strong>Right:</strong> YOLOv8 detecting objects in real time
+</p>
+
 ## Problem
 The pre-trained YOLOv8 model (COCO-trained) was not detecting small Hot Wheels toy cars reliably when many cars were scattered on the floor. It only detected a single car when placed very close (~0.65 confidence).
 Also this model is givinng wrong detection of the car such as toothbrush and other non relevant findings.
@@ -54,17 +66,7 @@ Also this model is givinng wrong detection of the car such as toothbrush and oth
 - Publish detections as `vision_msgs/Detection2DArray`
 - Integrate with Nav2 → drive toward detected car
 
-## Live Demo GIFs
 
-<p align="center">
-  <img src="media/hiWonder_Teleop_twist.gif" width="45%" alt="Teleop keyboard control" />
-  <img src="media/Hiwonmder_yolo_detection.gif" width="45%" alt="YOLOv8 live detection" />
-</p>
-
-<p align="center">
-  <strong>Left:</strong> Keyboard teleop driving the robot<br>
-  <strong>Right:</strong> YOLOv8 detecting objects in real time
-</p>
 
 ## Code
 See `src/yolo_camera.py`
